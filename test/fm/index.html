@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+	<head>
+			<title> Tests </title>
+			<link rel="stylesheet" href="../../node_modules/mocha/mocha.css" />
+			<script src="../../bower_components/jquery/dist/jquery.js"></script>
+			<script src="../../src/fm.js"></script>
+	</head>
+	<body>
+			<div id="mocha"></div>
+			<script src="../../node_modules/mocha/mocha.js"></script>
+			<script src="../../node_modules/chai/chai.js"></script>
+			<script src="../../node_modules/chai-jquery/chai-jquery.js"></script>
+
+			<form id="_130_fm" data-fm-namespace="_130_">
+				<input id="_130_text" name="_130_text" type="text" value="some text field" />
+				<input id="_130_hidden" name="_130_hidden" type="hidden" value="some hidden field" />
+				<input id="_130_checkbox" name="_130_checkbox" type="checkbox" value="some checkbox field" />
+				<input id="_130_radio1" name="_130_radio" type="radio" value="some radio field 1" />
+				<input id="_130_radio2" name="_130_radio" type="radio" value="some radio field 2" />
+				<input checked id="_130_radio3" name="_130_radio" type="radio" value="some radio field 3" />
+
+				<textarea id="_130_textarea" name="_130_textarea">some textarea</textarea>
+
+				<select id="_130_select" name="_130_select">
+					<option value="some select option 1">option 1</option>
+					<option value="some select option 2">option 2</option>
+					<option value="some select option 3">option 3</option>
+					<option selected value="some select option 4">option 4</option>
+				</select>
+
+				<fieldset id="_130_fieldset" name="_130_fieldset">
+					<legend>Some fieldset</legend>
+					<input id="_130_text2" name="_130_text2" type="text" value="some text field 2" />
+				</fieldset>
+
+				<button id="_130_button" name="_130_button" value="some button field"></button>
+			</form>
+
+			<form id="_200_fm">
+				<input id="_200_text" name="_200_text" type="text" value="some text field" />
+				<input id="_200_hidden" name="_200_hidden" type="hidden" value="some hidden field" />
+				<input id="_200_checkbox" name="_200_checkbox" type="checkbox" value="some checkbox field" />
+				<input id="_200_radio1" name="_200_radio" type="radio" value="some radio field 1" />
+				<input id="_200_radio2" name="_200_radio" type="radio" value="some radio field 2" />
+				<input checked id="_200_radio3" name="_200_radio" type="radio" value="some radio field 3" />
+
+				<textarea id="_200_textarea" name="_200_textarea">some textarea</textarea>
+
+				<select id="_200_select" name="_200_select">
+					<option value="some select option 1">option 1</option>
+					<option value="some select option 2">option 2</option>
+					<option value="some select option 3">option 3</option>
+					<option selected value="some select option 4">option 4</option>
+				</select>
+
+				<fieldset id="_200_fieldset" name="_200_fieldset">
+					<legend>Some fieldset</legend>
+					<input id="_200_text2" name="_200_text2" type="text" value="some text field 2" />
+				</fieldset>
+
+				<button id="_200_button" name="_200_button" value="some button field"></button>
+			</form>
+
+			<script>
+					mocha.setup('bdd');
+
+					var expect = chai.expect;
+			</script>
+			<script src="./fm.js"></script>
+			<script>
+					if (window.mochaPhantomJS) { mochaPhantomJS.run(); }
+					else { mocha.run(); }
+			</script>
+	</body>
+</html>

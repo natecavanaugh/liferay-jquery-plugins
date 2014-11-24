@@ -1,0 +1,26 @@
+{
+  "name": "liferay-jquery-plugins",
+  "version": "1.0.0",
+  "description": "jQuery plugins for Liferay Portal",
+  "main": "index.js",
+  "keywords": [
+    "jquery",
+    "liferay",
+    "plugins"
+  ],
+  "authors": [
+    "Nate Cavanaugh"
+  ],
+  "license": "MIT",
+  "homepage": "http://liferay.com",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jquery": "~2.1.1"
+  }
+}
